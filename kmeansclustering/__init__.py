@@ -1,7 +1,5 @@
 # __init__.py
-from kmeansclustering.weighted_mm_kmeans import minsize_kmeans_weighted
-__version__ = "0.0.1"
+from .weighted_mm_kmeans import *
 
-
-def helloWorld():
-   print("Hello World")
+__version__ = "ALPHA v.03"
+__name__ = "Kmeans Constrained Clustering Upload"

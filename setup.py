@@ -1,18 +1,24 @@
 from distutils.core import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='kmeansclustering',         # How you named your package folder (MyLib)
     packages=['kmeansclustering'],   # Chose the same as "name"
-    version='0.2',      # Start with a small number and increase it with every change you make
+    version='0.3',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
     description='kmeans constrained clustering',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Sean Kaat',                   # Type in your name
     author_email='seankaat@gmail.com',      # Type in your E-Mail
     # Provide either the link to your github or to your website
     url='https://github.com/SeanKaat/kmeansclustering',
     # I explain this later on
-    download_url='https://github.com/SeanKaat/kmeansclustering/archive/v_02.tar.gz',
+    download_url='https://github.com/SeanKaat/kmeansclustering/archive/v_03.tar.gz',
     # Keywords that define your package best
     keywords=['Kmeans', 'clustering', 'constrained'],
     install_requires=[
